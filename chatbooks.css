@@ -640,6 +640,7 @@ header .android{ background-position: 0 -126px; }
 }
 
 .android-box .btn{
+	border-radius: 0 5px 5px 0;
 	height: 38px;
 	width: 100px;
 	padding-left: 0;
