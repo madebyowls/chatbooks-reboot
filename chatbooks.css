@@ -530,9 +530,7 @@ section{
 	position: relative;
 }
 
-	section:nth-child(even) .screenshot, /*modern*/
-	header + section .screenshot, /*fallback part a*/
-	section ~ section ~ section .screenshot /*fallback part b*/ {
+	section:nth-child(even) .screenshot {
 		float: right;
 		margin-right: 0;
 		margin-left: 85px;
@@ -761,9 +759,7 @@ footer a:hover{
 		margin-right: 5%;
 	}
 
-	section:nth-child(even) .screenshot,
-	header + section .screenshot,
-	section ~ section ~ section .screenshot {
+	section:nth-child(even) .screenshot {
 		margin-left: 5%;
 	}
 }
