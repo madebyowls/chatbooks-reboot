@@ -539,14 +539,43 @@ section{
 	.screenshot img{
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 
 	.screenshot .screen{
-		left: 8%;
-		width: 85%;
+		left: 7.75%;
+		width: 86%;
 		top: 14.5%;
 		height: auto;
+	}
+
+section.landscape{
+	height: auto;
+}
+
+section.landscape .content{
+	position: static;
+	margin-top: 0;
+	padding: 50px 20px;
+}
+
+section.landscape .content .screenshot{
+	width: 569px;
+	height: 270px;
+	float: none;
+	margin: 20px auto 25px;
+	max-width: 100%;
+}
+
+	section.landscape .content .screenshot .screen{
+		left: 13.7%;
+		top: 8.3%;
+		width: 72%;
+	}
+
+	section.landscape .text{
+		height: auto;
+		text-align: center;
 	}
 
 .text{
@@ -684,6 +713,13 @@ footer a:hover{
 		width: 202px;
 		height: 426.75px;
 	}
+
+	section.landscape .content .screenshot{
+		width: 426.75px;
+		height: 202px;
+		/*margin: 30px auto 20px;*/
+	}
+
 }
 
 @media (max-height: 450px), (max-width: 520px){
@@ -702,9 +738,19 @@ footer a:hover{
 		height: 284.5px;
 	}
 
+	section.landscape .content .screenshot{
+		height: 135px;
+		width: 284.5px;
+	}
+
 	footer{
 		padding: 0 10px;
 	}
+
+	section.landscape .content{
+		padding: 20px 10px;
+	}
+
 	.content{
 		left: 10px;
 		right: 10px;
@@ -721,6 +767,9 @@ footer a:hover{
 }
 
 @media (max-width: 440px){
+	body{
+		font-size: .9em;
+	}
 	header .content{
 		margin-top: -213.375px;
 	}
