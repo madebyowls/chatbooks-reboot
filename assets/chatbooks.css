@@ -612,7 +612,7 @@ header .text{
 	background: rgba(242, 241, 255, .33);
 	box-shadow: 0 3px 5px rgba(0,0,0,.2);
 	border-radius: 6px;
-	line-height: 1.2;
+	line-height: 1.1;
 }
 
 header h2{
@@ -623,16 +623,15 @@ header h2{
 }
 
 header p{
-	font-size: .8em;
 	color: #675646;
-	margin-bottom: 1em;
+	margin-bottom: .7em;
 }
 
 
 header .badge{
 	display: inline-block;
-	width: 94.5px;
-	height: 28px;
+	width: 135px;
+	height: 40px;
 	margin-bottom: 10px;
 }
 
@@ -643,14 +642,14 @@ header .screenshot{
 	position: absolute;
 	left: 72.916666667%;
 	bottom: 0;
-	margin: 0 0 -50px -135px;
+	margin: 0 0 -50px -160px;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1120px){
 	header .screenshot{
 		width: 202.5px;
 		height: 426.75px;
-		margin: 0 0 -30px -101px;
+		margin: 0 0 -30px -121px;
 	}
 
 
@@ -665,7 +664,7 @@ header .screenshot{
 
 @media (max-width: 940px){
 	header .text-container{
-		font-size: .7em;
+		font-size: .8em;
 	}
 }
 
@@ -680,7 +679,6 @@ header .screenshot{
 
 	header .text-container{
 		width: 41.176470588%;
-		font-size: .75em;
 	}
 
 }
@@ -714,6 +712,9 @@ header .screenshot{
 		margin-bottom: -18px;
 		margin-left: -85px;
 	}
+	header .text-container{
+		font-size: .9em;
+	}
 }
 
 @media (max-width: 540px){
@@ -725,18 +726,24 @@ header .screenshot{
 		padding: 15px 15px 5px 15px;
 	}
 
+	header h2{
+		font-weight: 400;
+	}
+
 	header p{
 		display: none;
 	}
 }
 
 @media (max-width: 420px){
-	header .text-container{
-		font-size: .8em;
-	}
 
 	header .text{
 		margin-top: -5px;
+		padding: 10px 10px 0 10px;
+	}
+
+	header h2{
+		margin-bottom: .5em;
 	}
 
 	header .screenshot{
