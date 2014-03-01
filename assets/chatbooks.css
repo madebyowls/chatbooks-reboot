@@ -468,6 +468,7 @@ img{
 	text-shadow: 0 1px 0 rgba(0,0,0,.5);
 	font-weight: 300;
 	line-height: 1.2;
+	border: none;
 }
 .btn:hover{
 	background-image: -moz-linear-gradient(top, #00d6c8 0, #00b3a7 100%);
@@ -482,6 +483,16 @@ img{
 	background-image: linear-gradient(to bottom, #00998f 0, #00AAA0 100%);
 	-webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.2), inset 0 0 10px 0 rgba(0,0,0,.5);
 	box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.2), inset 0 0 10px 0 rgba(0,0,0,.5);
+}
+.btn[disabled]{
+	opacity: .6;
+	background: #00AAA0;
+	background-image: -moz-linear-gradient(top, #00ccbe 0, #00AAA0 100%);
+	background-image: -webkit-linear-gradient(top, #00ccbe 0, #00AAA0 100%);
+	background-image: -o-linear-gradient(top, #00ccbe 0, #00AAA0 100%);
+	background-image: linear-gradient(to bottom, #00ccbe 0, #00AAA0 100%);
+	-webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.2);
+	box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.2);
 }
 
 .btn.btn-large{
@@ -830,6 +841,19 @@ header .screenshot{
 	width: 100px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+form{
+	margin: 0;
+}
+
+p.error{
+	color: #ad0000;
+	margin: 10px 0 -10px;
+}
+
+p.error a{
+	color: #ad0000;
 }
 
 footer{
